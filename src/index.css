@@ -4,7 +4,8 @@
     --color-primary-100: #00F5FF;
     --color-secondary-100: #448084;
     --color-tertiary-100: #A0A0A0;
-    --color-neutral-100: #121212;
+    --color-neutral-900: #121212;
+    --color-neutral-500: #1C1C1C;
 
     --font-headline: "Space Grotesk", sans-serif;
     --font-body: "Inter", sans-serif;

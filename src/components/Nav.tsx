@@ -34,7 +34,7 @@ export default function Nav() {
     }
     return (
         <div className="w-full h-20">
-            <nav className="h-20 flex flex-row justify-between md:grid md:grid-cols-[1fr_auto_1fr] items-center gap-4 p-4 fixed top-0 left-0 right-0 z-100 bg-neutral-100 border-b-2 border-primary-100/10">
+            <nav className="h-20 flex flex-row justify-between md:grid md:grid-cols-[1fr_auto_1fr] items-center gap-4 p-4 fixed top-0 left-0 right-0 z-100 bg-neutral-900 border-b-2 border-primary-100/10">
                 <h1 className="text-xl font-headline justify-self-start min-w-0 font-bold">{"LDH::WEB::STATIC"}</h1>
                 <ul className="gap-6 font-body text-sm justify-center hidden md:flex">
                     {navItems.map((item) => (
@@ -63,14 +63,14 @@ function MobileNav({ handleMobileNavClose }: { handleMobileNavClose: () => void 
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.7, ease: "easeInOut" }}
-                className="w-full h-full absolute top-0 left-0 right-0 -z-10 bg-neutral-100/30">
+                className="w-full h-full absolute top-0 left-0 right-0 -z-10 bg-neutral-900/30">
             </motion.div>
             <motion.div
                 initial={{ x: -800 }}
                 animate={{ x: 0 }}
                 exit={{ x: -600 }}
                 transition={{ duration: 0.7 }}
-                className="p-8 bg-neutral-100 min-h-screen w-3/4">
+                className="p-8 bg-neutral-900 min-h-screen w-3/4">
                 <XMarkIcon onClick={handleMobileNavClose} className="w-8 h-8 mb-8" />
                 <ul className="flex flex-col gap-4">
                     {navItems.map((item) => (
