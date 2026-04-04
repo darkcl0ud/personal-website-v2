@@ -13,7 +13,7 @@ export default function Hero() {
         navigate("/contact");
     }
     return (
-        <section className="flex items-center justify-center bg-cover bg-center relative bg-neutral-900/70 p-8 md:p-24">
+        <section className="flex items-center justify-center bg-cover bg-center relative bg-neutral-900/70 p-8 md:p-24 overflow-hidden">
             <img src={background} alt="Background" className="absolute inset-0 w-full h-full object-cover -z-10 blur-xs" />
             <div className="relative z-10 flex flex-col items-start justify-center w-full h-full gap-4 max-w-[1440px] mx-auto">
                 <div className="max-w-4xl text-center font-label bg-[color-mix(in_oklab,var(--color-primary-100)_40%,black)] px-4 py-2 outline outline-white/20">
