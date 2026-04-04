@@ -23,7 +23,7 @@ export default function Hero() {
                 <p className="text-tertiary-100 font-light tracking-widest md:w-1/2">Senior Cloud Architect | Specialized in serverless architectures and cloud native applications. Background in military and national security.</p>
                 <div className="flex gap-4 md:flex-row flex-col">
                     <Button onClick={handleReviewBackground}>{"REVIEW BACKGROUND ->"}</Button>
-                    <Button outline onClick={handleContactMe}>CONTACT ME</Button>
+                    <Button variant="outline" onClick={handleContactMe}>CONTACT ME</Button>
                 </div>
                 <IPBox />
             </div>

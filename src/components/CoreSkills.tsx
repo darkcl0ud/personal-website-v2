@@ -1,5 +1,6 @@
 import { ShieldCheckIcon, CloudIcon, CubeTransparentIcon, GlobeAmericasIcon } from "@heroicons/react/24/outline";
 import Section from "../ui/Section";
+import Header from "../ui/Header";
 
 const coreSkills = [
     {
@@ -25,7 +26,8 @@ const coreSkills = [
 ]
 
 export default function CoreSkills() {
-    return <Section number="01" title="Core Skills">
+    return <Section>
+        <Header number="01" title="Core Skills" />
         <div className="mx-auto grid w-full grid-cols-[repeat(auto-fit,minmax(min(100%,24rem),24rem))] justify-center">
             {coreSkills.map((skill) => (
                 <div key={skill.title} className="bg-neutral-500 p-8 outline outline-white/5 min-h-80 flex flex-col gap-8">
