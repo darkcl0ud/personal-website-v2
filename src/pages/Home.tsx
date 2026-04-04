@@ -1,11 +1,13 @@
 import Hero from "../components/Hero";
 import CoreSkills from "../components/CoreSkills";
+import TechnicalLogs from "../components/TechnicalLogs";
 
 export default function Home() {
     return (
-        <div>
+        <>
             <Hero />
             <CoreSkills />
-        </div>
+            <TechnicalLogs />
+        </>
     )
 }

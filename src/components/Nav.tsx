@@ -1,4 +1,4 @@
-import { CommandLineIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
+import { CommandLineIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { NavLink } from "react-router"
 import { useState } from "react";
 import * as motion from "motion/react-client";
@@ -14,8 +14,8 @@ const navItems = [
         href: "/experience"
     },
     {
-        label: "Projects",
-        href: "/projects"
+        label: "Articles",
+        href: "/articles"
     },
     {
         label: "Contact",
@@ -34,7 +34,8 @@ export default function Nav() {
     }
     return (
         <div className="w-full h-20">
-            <nav className="h-20 flex flex-row justify-between md:grid md:grid-cols-[1fr_auto_1fr] items-center gap-4 p-4 fixed top-0 left-0 right-0 z-100 bg-neutral-900 border-b-2 border-primary-100/10">
+            <nav className="h-20 fixed top-0 left-0 right-0 z-100 bg-neutral-900 border-b-2 border-primary-100/10">
+                <div className="max-w-[1440px] mx-auto h-full flex flex-row justify-between md:grid md:grid-cols-[1fr_auto_1fr] items-center gap-4 p-4">
                 <h1 className="text-xl font-headline justify-self-start min-w-0 font-bold">{"LDH::WEB::STATIC"}</h1>
                 <ul className="gap-6 font-body text-sm justify-center hidden md:flex">
                     {navItems.map((item) => (
@@ -48,6 +49,7 @@ export default function Nav() {
                 <AnimatePresence>
                     {isMobileNavOpen && <MobileNav handleMobileNavClose={handleMobileNavClose} />}
                 </AnimatePresence>
+            </div>
             </nav>
         </div>
 
