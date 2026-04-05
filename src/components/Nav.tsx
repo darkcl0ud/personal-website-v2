@@ -77,7 +77,7 @@ function MobileNav({ handleMobileNavClose }: { handleMobileNavClose: () => void 
                 <ul className="flex flex-col gap-4">
                     {navItems.map((item) => (
                         <li key={item.href}>
-                            <NavLink to={item.href} className={({ isActive }) => isActive ? "text-primary-100 underline underline-offset-8" : "text-white/40"}>{item.label}</NavLink>
+                            <NavLink to={item.href} className={({ isActive }) => isActive ? "text-neutral-900 bg-primary-100 px-4 py-2" : "text-white/40"}>{item.label}</NavLink>
                         </li>
                     ))}
                 </ul>
