@@ -98,9 +98,9 @@ export default function IPBox() {
   }, []);
     return (
         <div className="w-fit h-20 md:absolute md:bottom-0 md:right-0 font-label font-light">
-            <p className="text-sm text-white/40 tracking-widest">IP_ADDR: <span>{loading ? "Loading..." : ip}</span></p>
-            <p className="text-sm text-white/40 tracking-widest">LOC: <span>{loading ? "Loading..." : country}</span></p>
-            <p className="text-sm text-white/40 tracking-widest">VER: v1.0.0</p>
+            <p className="text-xs md:text-sm text-white/40 tracking-widest">IP_ADDR: <span>{loading ? "Loading..." : ip}</span></p>
+            <p className="text-xs md:text-sm text-white/40 tracking-widest">LOC: <span>{loading ? "Loading..." : country}</span></p>
+            <p className="text-xs md:text-sm text-white/40 tracking-widest">VER: v1.0.0</p>
         </div>
     )
 }
