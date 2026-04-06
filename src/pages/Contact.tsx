@@ -33,7 +33,7 @@ export default function Contact() {
                             <LockClosedIcon className="w-4 h-4 text-white" />
                             <p className="text-white font-extralight tracking-widest text-xs">SECURE_TUNNEL_ESTABLISHED</p>
                         </span>
-                        <Button>EXECUTE_TRANSMISSION"</Button>
+                        <Button>EXECUTE_TRANSMISSION</Button>
                     </div>
                 </form>
             </Section>
