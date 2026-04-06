@@ -46,7 +46,7 @@ export default function Nav() {
                     ))}
                 </ul>
                 <CommandLineIcon className="w-6 h-6 justify-self-end shrink-0 hidden lg:block" />
-                <Bars3Icon onClick={handleMobileNavOpen} className="w-8 h-8 justify-self-end shrink-0 block lg:hidden" />
+                <Bars3Icon onClick={handleMobileNavOpen} className="w-8 h-8 justify-self-end shrink-0 block lg:hidden hover:cursor-pointer" />
                 <AnimatePresence>
                     {isMobileNavOpen && <MobileNav handleMobileNavClose={handleMobileNavClose} />}
                 </AnimatePresence>
@@ -74,7 +74,7 @@ function MobileNav({ handleMobileNavClose }: { handleMobileNavClose: () => void 
                 exit={{ x: -600 }}
                 transition={{ duration: 0.7 }}
                 className="p-8 bg-neutral-900 min-h-screen w-3/4 md:w-1/3">
-                <XMarkIcon onClick={handleMobileNavClose} className="w-8 h-8 mb-8" />
+                <XMarkIcon onClick={handleMobileNavClose} className="w-8 h-8 mb-8 hover:cursor-pointer" />
                 <ul className="flex flex-col gap-4">
                     {navItems.map((item) => (
                         <li key={item.href}>
