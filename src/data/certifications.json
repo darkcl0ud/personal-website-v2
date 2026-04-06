@@ -1,0 +1,129 @@
+[
+    {
+        "title": "AWS Certified Advanced Networking – Specialty",
+        "code": "AWS-ANS",
+        "issued": "2021-09-18",
+        "expires": "2027-09-15"
+    },
+    {
+        "title": "AWS Certified Cloud Practitioner",
+        "code": "AWS-CLF",
+        "issued": "2020-03-16",
+        "expires": "2028-08-14"
+
+    },
+    {
+        "title": "AWS Certified AI Practitioner",
+        "code": "AWS-AIF",
+        "issued": "2025-11-29",
+        "expires": "2028-11-29"
+    },
+    {
+        "title": "AWS Certified Developer – Associate",
+        "code": "AWS-DVA",
+        "issued": "2020-11-21",
+        "expires": "2028-08-14"
+    },
+    {
+        "title": "AWS Certified: Data Engineer – Associate",
+        "code": "AWS-DEA",
+        "issued": "2024-04-28",
+        "expires": "2027-04-28"
+    },
+    {
+        "title": "AWS Certified DevOps Engineer – Professional",
+        "code": "AWS-DOP",
+        "issued": "2022-08-14",
+        "expires": "2028-08-14"
+    },
+    {
+        "title": "AWS Certified Database – Specialty",
+        "code": "AWS-DBS",
+        "issued": "2023-08-05",
+        "expires": "2026-08-05"
+    },
+    {
+        "title": "AWS Certified Solutions Architect – Associate",
+        "code": "AWS-SAA",
+        "issued": "2020-06-01",
+        "expires": "2027-11-10"
+    },
+    {
+        "title": "AWS Certified Solutions Architect – Professional",
+        "code": "AWS-SAP",
+        "issued": "2021-11-13",
+        "expires": "2027-11-10"
+    },
+    {
+        "title": "AWS Certified SysOps Administrator – Associate",
+        "code": "AWS-SOA",
+        "issued": "2020-07-02",
+        "expires": "2028-08-14"
+    },
+    {
+        "title": "AWS Certified Security – Specialty",
+        "code": "AWS-SCS",
+        "issued": "2021-07-15",
+        "expires": "2027-07-14"
+    },
+    {
+        "title": "Microsoft Certified: Azure Administrator Associate",
+        "code": "MS-AZ-104",
+        "issued": "0000-00-00",
+        "expires": "0000-00-00"
+    },
+    {
+        "title": "Microsoft Certified: Azure Fundamentals",
+        "code": "MS-AZ-900",
+        "issued": "0000-00-00",
+        "expires": "0000-00-00"
+    },
+    {
+        "title": "Microsoft Certified: Azure Solutions Architect Expert",
+        "code": "MS-AZ-305",
+        "issued": "0000-00-00",
+        "expires": "0000-00-00"
+    },
+    {
+        "title": "Microsoft Certified: Azure AI Fundamentals",
+        "code": "MS-AI-400",
+        "issued": "0000-00-00",
+        "expires": "0000-00-00"
+    },
+    {
+        "title": "Cloud Digital Leader",
+        "code": "GCP-CDL",
+        "issued": "0000-00-00",
+        "expires": "0000-00-00"
+    },
+    {
+        "title": "The Open Group Certified: TOGAF® 9 Foundation",
+        "code": "OG0-092",
+        "issued": "0000-00-00",
+        "expires": "0000-00-00"
+    },
+    {
+        "title": "CompTIA Project+ Certification",
+        "code": "CompTIA-PK0",
+        "issued": "0000-00-00",
+        "expires": "0000-00-00"
+    },
+    {
+        "title": "CompTIA Network+ Certification",
+        "code": "COMPTIA-N10",
+        "issued": "0000-00-00",
+        "expires": "0000-00-00"
+    },
+    {
+        "title": "CompTIA Security+ Certification",
+        "code": "COMPTIA-SY0",
+        "issued": "0000-00-00",
+        "expires": "0000-00-00"
+    },
+    {
+        "title": "OffSec Wireless Professional (OSWP)",
+        "code": "PEN-210",
+        "issued": "0000-00-00",
+        "expires": "0000-00-00"
+    }
+]

@@ -1,0 +1,263 @@
+[
+    {
+      "title": "Senior Solutions Architect",
+      "company": "Reapit",
+      "from": "Oct 2025",
+      "to": "Present",
+      "experience": [
+        "Led the technical architecture design for a global system logging solution. This solution sent data into regional SOCs in AWS for further analysis, using secure private network access between on-premise systems, company managed AWS infrastructure, and third-party vendors.",
+        "Designed systems to automate internal onboarding procedures for enterprise clients. Helping to reduce manual interventions, minimizing risk of human error, and increasing onboarding uniformity.",
+        "Identified critical security vulnerabilities, demonstrated how they could be exploited and suggested remediations."
+      ],
+      "skills": [
+        "aws",
+        "confluence",
+        "terraform",
+        "poc",
+        "jira",
+        "lambda",
+        "eventbridge",
+        "sqs",
+        "sns",
+        "cloudfront",
+        "cloudflare",
+        "oauth",
+        "dynamodb"
+      ]
+    },
+    {
+      "title": "CTO",
+      "company": "CloudBase Technologies",
+      "from": "May 2025",
+      "to": "Sep 2025",
+      "experience": [
+        "Technical leader for a startup aimed to provide cross platform visibility and recommendations for cloud resources and costs.",
+        "Set out technical direction",
+        "Developed Go (Golang) API handlers and internal packages.",
+        "Crafted architectural documentation, in accordance with best practices.",
+        "Architected and implemented cross account segmentation for decoupled micro services.",
+        "Deployed AWS infrastructure using OpenTofu (Terraform fork)",
+        "Integrated third party OAuth service (WorkOS) into the core company product.",
+        "Created a custom internal OIDC service, which issued tokens that could in turn be exchanged for AWS and Azure credentials, to gain access to customer accounts, similar to Gitlab’s pipeline model.",
+        "Implemented a robust quota system through a DynamoDB single table design using transaction writes coupled with conditional statements."
+      ],
+      "skills": [
+        "aws",
+        "confluence",
+        "terraform",
+        "poc",
+        "jira",
+        "lambda",
+        "eventbridge",
+        "sqs",
+        "sns",
+        "cloudfront",
+        "cloudflare",
+        "oauth",
+        "golang",
+        "python",
+        "opentofu",
+        "gitlab",
+        "workos",
+        "stripe",
+        "dynamodb"
+      ]
+    },
+    {
+      "title": "Senior Manager, AWS Solutions Architect",
+      "company": "Reapit",
+      "from": "Apr 2024",
+      "to": "May 2025",
+      "experience": [
+        "Crafted detailed architectural documentation (Confluence), gathered requirements, attended and led stakeholder meetings to discuss proposed solutions, and published work tickets based on approved implementations (Jira).",
+        "Designed an architecture for automating and scheduling communication events based on streamed data created through SQL database record changes, this solution used a variety of services both AWS and third party, using AWS Pinpoint (End User Messaging) as a central delivery mechanism.",
+        "Designed a solution for importing customer real estate data from third party portals (Rightmove, Zoopla, etc.) into the CRM system for central access and visibility.",
+        "Architected a cloud native upgrade for a system allowing real estate data to be synced with third party portals (Rightmove, Zoopla, etc.), allowing clients to modify property data in the central CRM while syncing with all compatible / configured publishers.",
+        "Assisted in providing a solution for the migration of Australian systems into AWS, while keeping critical connectivity to UK based systems in an efficient and highly available manner.",
+        "Developed proof of concepts when required as an additional annex to architecture documentation to illustrate the technical capabilities of certain proposed services, relating to the challenges posed. (AWS SAM & Python 3.X)"
+      ],
+      "skills": [
+        "AWS",
+        "Azure",
+        "DevOps",
+        "Terraform",
+        "CloudFormation",
+        "Python",
+        "Java",
+        "C#",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Head of Cloud",
+      "company": "Kuro",
+      "from": "Jul 2023",
+      "to": "Jan 2024",
+      "experience": [
+        "Part of the AWS Defence Accelerator 2023",
+        "Architected an implemented a serverless event-driven driven architecture utilizing services such as Lambda, SQS, SES, CloudFormation, CloudFront, CloudFront Functions, Lambda@Edge, S3, DynamoDB, API Gateway, AWS WAF, and Cognito.",
+        "Crafted a cross-device passwordless email authentication system using custom signed tokens, SES, Cognito and Lambda. This allowed users to sign in into an account by verifying their access to an email address.",
+        "Designed and deployed an event-driven payment and invoicing solution with Stripe, Stripe SDK for python3.11, Lambda, EventBridge and DynamoDB.",
+        "Drafted SES templates providing HTML/CSS designed for access and notification emails to customers. Sending of emails was automated using DynamoDB Streams and Lambda.",
+        "Developed and built a feature providing presigned limited access to desktops through CloudFront using custom signed tokens, AWS WAF, S3, EC2, API Gateway, Lambda, Cloudfront Functions, Lambda@Edge, DynamoDB, SES and the PyJWT library for python3.11.",
+        "Ensured the platform above was deployable using IaC more specifically SAM (Serverless Application Model)."
+      ],
+      "skills": [
+        "AWS",
+        "Azure",
+        "DevOps",
+        "Terraform",
+        "CloudFormation",
+        "Python",
+        "Java",
+        "C#",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Senior Cloud Architect",
+      "company": "Blacksmiths Group",
+      "from": "Oct 2022",
+      "to": "Jan 2024",
+      "experience": [
+        "Consulted for clients with current solutions in AWS and Azure, ensuring they adhered to best practices and providing detailed reports on findings",
+        "Was the cloud lead of a larger incident response team to assist a Critical National Infrastructure client with compromised resources in Azure. Tasks involved to retrieve and analyze logs, identify security gaps, and provide as well as oversee the implementation of a more robust and hardened architecture.",
+        "Provided clients with architectural designs to implement which fit their requirements as well as internal skillsets. These designs also noted the AWS Well Architected Framework and how it was designed with the 6 pillars in mind.",
+        "Created a globally resilient serverless platform utilizing Route53 weighted and latency based routing (including health checks), CloudFront secondary origin buckets, Global DynamoDB tables, multiple region API Gateways and Lambda Functions.",
+        "Developed a multi-regional, resilient OTP access code system and integrated SES emails with HTML templates, triggered by DynamoDB Streams patterns."
+      ],
+      "skills": [
+        "AWS",
+        "Azure",
+        "DevOps",
+        "Terraform",
+        "CloudFormation",
+        "Python",
+        "Java",
+        "C#",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Security Consultant (part-time) - OT & IT Systems",
+      "company": "Blacksmiths Group",
+      "from": "Jan 2022",
+      "to": "Dec 2024",
+      "experience": [
+        "Conducted comprehensive security assessments of Information and Operational Technology (IT & OT) Infrastructure.",
+        "Reviewed networking rules and firewall logs ensuring segmentation was applied and strict boundaries enforced.",
+        "Crafted detailed report findings with information about vulnerabilities, why, severity and recommendations to rectify.",
+        "Reviewed policies and procedures on how access was established into the network for different personnel, on and off site. ",
+        "Reviews involved travel to multiple countries and visiting sites classed as Critical National Infrastructure."
+      ],
+      "skills": [
+        "AWS",
+        "Azure",
+        "DevOps",
+        "Terraform",
+        "CloudFormation",
+        "Python",
+        "Java",
+        "C#",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Cloud Architect",
+      "company": "Blacksmiths Group",
+      "from": "Mar 2021",
+      "to": "Oct 2022",
+      "experience": [
+        "Managed the internal AWS Organization, created AWS Accounts and controlled access using AWS SSO (IAM Identity Center).",
+        "Authored CloudFormation Templates to be deployed as StackSets within the organization providing an automated, custom, and unified account set up model along with AWS Control Tower.",
+        "Architected and deployed the backend for a web application using SAM (Serverless Application Model) and CloudFormation. The services deployed included Fargate, S3, Lambda, API Gateway, Cogntio, OpenSearch, ECR, NAT Gateways and SES. The deployed platform was Multi-AZ resilient.",
+        "Guided start ups towards setting up in AWS and provided architectural solutions they could implement in the cloud to match their requirements",
+        "Consulted on migration from on-premise to AWS. Provided options such as re-hosting, re-platforming and re-architecting while factoring potential skill and time constraints.",
+        "Developed Azure DevOps pipelines with access to deploy/update resources into AWS accounts using predefined parameters."
+      ],
+      "skills": [
+        "AWS",
+        "Azure",
+        "DevOps",
+        "Terraform",
+        "CloudFormation",
+        "Python",
+        "Java",
+        "C#",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Operational Technology Adviser",
+      "company": "Blacksmiths Group",
+      "from": "Aug 2020",
+      "to": "Mar 2021",
+      "experience": [
+        "Assisted in developing a global secure communications and collaboration platform in AWS using services such as, VPC Peering, EC2, NAT Gateways, KMS, EventBridge and Lambda.",
+        "Crafted IaC templates using Terraform which provided the deployment of secure platforms in AWS.",
+        "Designed a secure communications network while also providing reduced latency for globally dispersed clients.",
+        "Migrated the previous AWS Account structure to use cross account IAM roles and afterwards implemented Control Tower and AWS SSO.",
+        "Created SCPs to ensure secure management of critical services within accounts at an organizational level.",
+        "Implemented secure storage solutions using AWS KMS encryption when required."
+      ],
+      "skills": [
+        "AWS",
+        "Azure",
+        "DevOps",
+        "Terraform",
+        "CloudFormation",
+        "Python",
+        "Java",
+        "C#",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Army Recruiter",
+      "company": "British Army",
+      "from": "Mar 2019",
+      "to": "Aug 2020",
+      "experience": [
+        "Represented the British Army and recruited new personnel into the armed forces",
+        "Provided outreach and community engagement, going into schools and talking about army life and the duties performed by the military in general.",
+        "Delivered presentations to potential new recruits on military requirements, assessments and army life.",
+        "Provided advice on potential roles to match a candidates skillsets and passions and a roadmap to achieving a job in the desired role."
+      ],
+      "skills": [
+        "AWS",
+        "Azure",
+        "DevOps",
+        "Terraform",
+        "CloudFormation",
+        "Python",
+        "Java",
+        "C#",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Communications Systems Engineer",
+      "company": "British Army",
+      "from": "Sep 2015",
+      "to": "Aug 2020",
+      "experience": [
+        "Second in command of the Regimental Receipts and Issues store within the Support Squadron.",
+        "Crafted and reviewed detail documentation pertaining to faults within the regiment’s communication equipment.",
+        "Provided network and system administration assistance to the other squadrons when required.",
+        "Led a field engineering team during a one-month training exercise, addressing the regiment's second line technical issues, participating in regimental-level meetings, and improving the efficiency of diagnosing and exchanging faulty equipment across remote team locations.",
+        "Issued condemnation certificates for faulty equipment when it was deemed beyond local repair, and obtaining proper authorization from relevant personnel in command.",
+        "Acted as a liaison between the military and civilian contractors for the repair of faulty equipment."
+      ],
+      "skills": [
+        "AWS",
+        "Azure",
+        "DevOps",
+        "Terraform",
+        "CloudFormation",
+        "Python",
+        "Java",
+        "C#",
+        "SQL"
+      ]
+    }
+  ]
