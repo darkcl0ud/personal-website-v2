@@ -8,7 +8,7 @@ import SystemStatus from "../ui/SystemStatus";
 export default function Hero() {
     const navigate = useNavigate();
     const handleReviewBackground = () => {
-        navigate("/background");
+        navigate("/experience");
     }
     const handleContactMe = () => {
         navigate("/contact");
