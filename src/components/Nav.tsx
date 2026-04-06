@@ -3,6 +3,7 @@ import { NavLink } from "react-router"
 import { useState } from "react";
 import * as motion from "motion/react-client";
 import { AnimatePresence } from "motion/react";
+import logo from "../assets/logo.svg";
 
 const navItems = [
     {
@@ -36,7 +37,7 @@ export default function Nav() {
         <div className="w-full h-16">
             <nav className="h-16 fixed top-0 left-0 right-0 z-100 bg-neutral-900 border-b-1 border-primary-100/20 px-8 md:px-24">
                 <div className="max-w-[1440px] mx-auto h-full flex flex-row justify-between lg:grid lg:grid-cols-[1fr_auto_1fr] items-center gap-4">
-                <h1 className="text-xl font-headline justify-self-start min-w-0 font-bold">{"LDH::WEB::STATIC"}</h1>
+                <img src={logo} alt="Logo" className="md:h-12 h-8" />
                 <ul className="gap-6 font-body text-sm justify-center hidden lg:flex">
                     {navItems.map((item) => (
                         <li key={item.href}>
