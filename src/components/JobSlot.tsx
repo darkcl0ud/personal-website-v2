@@ -18,14 +18,14 @@ export default function JobSlot({ job, idx }: { job: Job, idx: number }) {
                 </div>
                 <p className="text-white font-bold md:font-extrabold font-label tracking-widest text-sm md:text-lg">{job.from.toUpperCase()} - {job.to.toUpperCase()}</p>
             </div>
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-white font-extralight tracking-widest text-sm">
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 text-white font-extralight tracking-widest text-sm">
                 {job.experience.map((experience) => (
                     <li key={experience} className="flex flex-col gap-2 hover:text-white"><span className="bg-primary-100/50 max-w-24 h-[2px]"/><p>{experience}</p></li>
                 ))}
             </ul>
             <ul className="flex flex-row flex-wrap gap-2 justify-center">
                 {job.skills.map((skill) => (    
-                    <li key={skill} className={`${idx % 2 === 0 ? "bg-neutral-900" : "bg-neutral-500"} p-2 rounded-md text-white font-extralight tracking-widest text-xs md:text-sm`}>{skill}</li>
+                    <li key={skill} className={`${idx % 2 === 0 ? "bg-neutral-900" : "bg-neutral-500"} p-2 text-white font-extralight tracking-widest text-xs md:text-sm`}>{skill}</li>
                 ))}
             </ul>
         </li>
