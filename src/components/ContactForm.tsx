@@ -20,8 +20,8 @@ export default function ContactForm() {
                     <label htmlFor="message" className="text-white font-extralight tracking-widest text-xs">MESSAGE_DATA</label>
                     <textarea id="message" className="border-1 border-tertiary-100/20 focus:outline-none focus:border-primary-100 text-white text-sm p-4 bg-neutral-500 tracking-wide resize-none h-32" placeholder="[START_TRANSMISSION_CONTENT]" />
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-4 items-center justify-between">
-                    <span className="flex flex-row items-center gap-2">
+                <div className="flex flex-col-reverse md:grid md:grid-cols-[1fr_1fr] gap-8 md:gap-4 items-center justify-between">
+                    <span className="flex flex-row items-center gap-2 justify-center">
                         <LockClosedIcon className="w-4 h-4 text-white" />
                         <p className="text-white font-extralight tracking-widest text-xs">SECURE_TUNNEL_ESTABLISHED</p>
                     </span>
