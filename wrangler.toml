@@ -10,11 +10,4 @@ workers_dev = true
 
 [env.prod]
 workers_dev = false
-
-[env.prod.routes]
-[[env.prod.routes]]
-pattern = "ldhughes.cloud"
-custom_domain = true
-[[env.prod.routes]]
-pattern = "www.ldhughes.cloud"
-custom_domain = true
+route = ["www.ldhughes.cloud", "ldhughes.cloud"]
