@@ -9,5 +9,6 @@ not_found_handling = "single-page-application"
 workers_dev = true
 
 [env.prod]
+name = "personal-website-v2"
 workers_dev = false
 routes = ["www.liam.network", "liam.network"]
