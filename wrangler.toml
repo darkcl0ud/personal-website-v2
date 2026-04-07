@@ -12,4 +12,4 @@ workers_dev = true
 [env.prod]
 name = "personal-website-v2-prod"
 workers_dev = false
-routes = ["www.liam.network", "liam.network"]
+routes = ["www.liam.network/*", "liam.network/*"]
