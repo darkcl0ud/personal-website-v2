@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emnapi/core": "^1.9.2",
+    "@emnapi/runtime": "^1.9.2",
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/vite": "^4.2.2",
     "motion": "^12.38.0",
