@@ -14,15 +14,15 @@ export default function ContactForm() {
             <fetcher.Form method="post" className="bg-black p-6 shadow-[0_0_12px_theme(colors.primary.100/50%),0_0_64px_theme(colors.primary.100/25%)] flex flex-col gap-8 font-label max-w-[600px] mx-auto">
                 <div className="flex flex-col gap-4 w-full">
                     <label htmlFor="name" className="text-white font-extralight tracking-widest text-xs">USER_IDENTIFIER</label>
-                    <input name="name" type="text" id="name" className="bg-transparent border-0 border-b-1 border-white/30 focus:outline-none focus:border-primary-100 text-white text-sm pb-2" placeholder="NAME" defaultValue={data?.data.name} />
+                    <input required name="name" type="text" id="name" className="bg-transparent border-0 border-b-1 border-white/30 focus:outline-none focus:border-primary-100 text-white text-sm pb-2" placeholder="NAME" defaultValue={data?.data.name} />
                 </div>
                 <div className="flex flex-col gap-4 w-full">
                     <label htmlFor="email" className="text-white font-extralight tracking-widest text-xs">CONTACT_PROTOCOL</label>
-                    <input name="email" type="email" id="email" className="bg-transparent border-0 border-b-1 border-white/30 focus:outline-none focus:border-primary-100 text-white text-sm pb-2" placeholder="EMAIL" defaultValue={data?.data.email} />
+                    <input required name="email" type="email" id="email" className="bg-transparent border-0 border-b-1 border-white/30 focus:outline-none focus:border-primary-100 text-white text-sm pb-2" placeholder="EMAIL" defaultValue={data?.data.email} />
                 </div>
                 <div className="flex flex-col gap-4 w-full">
                     <label htmlFor="message" className="text-white font-extralight tracking-widest text-xs">MESSAGE_DATA</label>
-                    <textarea name="message" id="message" className="border-1 border-tertiary-100/20 focus:outline-none focus:border-primary-100 text-white text-sm p-4 bg-neutral-500 tracking-wide resize-none h-32" placeholder="[START_TRANSMISSION_CONTENT]" defaultValue={data?.data.message} />
+                    <textarea required name="message" id="message" className="border-1 border-tertiary-100/20 focus:outline-none focus:border-primary-100 text-white text-sm p-4 bg-neutral-500 tracking-wide resize-none h-32" placeholder="[START_TRANSMISSION_CONTENT]" defaultValue={data?.data.message} />
                 </div>
                 {!data?.success &&
                     <div className="grid grid-cols-1 gap-8 items-center justify-between">
