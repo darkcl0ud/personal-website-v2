@@ -19,7 +19,6 @@
         "eventbridge",
         "sqs",
         "sns",
-        "cloudfront",
         "cloudflare",
         "oauth",
         "dynamodb"
@@ -44,19 +43,15 @@
       "skills": [
         "aws",
         "confluence",
-        "terraform",
+        "opentofu",
         "poc",
         "jira",
         "lambda",
         "eventbridge",
         "sqs",
-        "sns",
-        "cloudfront",
         "cloudflare",
         "oauth",
         "golang",
-        "python",
-        "opentofu",
         "gitlab",
         "workos",
         "stripe",
@@ -77,15 +72,19 @@
         "Developed proof of concepts when required as an additional annex to architecture documentation to illustrate the technical capabilities of certain proposed services, relating to the challenges posed. (AWS SAM & Python 3.X)"
       ],
       "skills": [
-        "AWS",
-        "Azure",
-        "DevOps",
-        "Terraform",
-        "CloudFormation",
-        "Python",
-        "Java",
-        "C#",
-        "SQL"
+          "aws",
+          "terraform",
+          "cloudformation",
+          "pocs",
+          "confluence",
+          "jira",
+          "oauth",
+          "eventbridge",
+          "sqs",
+          "sns",
+          "cloudfront",
+          "cloudflare",
+          "dynamodb"
       ]
     },
     {
@@ -103,15 +102,21 @@
         "Ensured the platform above was deployable using IaC more specifically SAM (Serverless Application Model)."
       ],
       "skills": [
-        "AWS",
-        "Azure",
-        "DevOps",
-        "Terraform",
-        "CloudFormation",
-        "Python",
-        "Java",
-        "C#",
-        "SQL"
+        "aws",
+        "azure",
+        "devops",
+        "cloudformation",
+        "python",
+        "stripe",
+        "dynamodb",
+        "ses",
+        "lambda",
+        "eventbridge",
+        "cloudfront",
+        "lambda@edge",
+        "api-gateway",
+        "cognito",
+        "nat-gateways"
       ]
     },
     {
@@ -127,15 +132,20 @@
         "Developed a multi-regional, resilient OTP access code system and integrated SES emails with HTML templates, triggered by DynamoDB Streams patterns."
       ],
       "skills": [
-        "AWS",
-        "Azure",
-        "DevOps",
-        "Terraform",
-        "CloudFormation",
-        "Python",
-        "Java",
-        "C#",
-        "SQL"
+        "aws",
+        "azure",
+        "devops",
+        "cloudformation",
+        "python",
+        "dynamodb",
+        "ses",
+        "lambda",
+        "eventbridge",
+        "cloudfront",
+        "cloudfront-functions",
+        "lambda@edge",
+        "api-gateway",
+        "cognito"
       ]
     },
     {
@@ -151,15 +161,11 @@
         "Reviews involved travel to multiple countries and visiting sites classed as Critical National Infrastructure."
       ],
       "skills": [
-        "AWS",
-        "Azure",
-        "DevOps",
-        "Terraform",
-        "CloudFormation",
-        "Python",
-        "Java",
-        "C#",
-        "SQL"
+        "consultancy",
+        "security",
+        "reporting",
+        "networking",
+        "firewall"
       ]
     },
     {
@@ -176,15 +182,19 @@
         "Developed Azure DevOps pipelines with access to deploy/update resources into AWS accounts using predefined parameters."
       ],
       "skills": [
-        "AWS",
-        "Azure",
-        "DevOps",
-        "Terraform",
-        "CloudFormation",
-        "Python",
-        "Java",
-        "C#",
-        "SQL"
+        "aws",
+        "azure",
+        "devops",
+        "terraform",
+        "cloudformation",
+        "python",
+        "dynamodb",
+        "sam",
+        "agile",
+        "cloudfront",
+        "lambda",
+        "s3",
+        "ecs"
       ]
     },
     {
@@ -201,15 +211,20 @@
         "Implemented secure storage solutions using AWS KMS encryption when required."
       ],
       "skills": [
-        "AWS",
-        "Azure",
-        "DevOps",
-        "Terraform",
-        "CloudFormation",
-        "Python",
-        "Java",
-        "C#",
-        "SQL"
+        "aws",
+        "devops",
+        "terraform",
+        "cloudformation",
+        "python",
+        "vpc",
+        "openvpn",
+        "ec2",
+        "nat-gateways",
+        "kms",
+        "route53",
+        "dynamodb",
+        "lambda",
+        "eventbridge"
       ]
     },
     {
@@ -224,15 +239,11 @@
         "Provided advice on potential roles to match a candidates skillsets and passions and a roadmap to achieving a job in the desired role."
       ],
       "skills": [
-        "AWS",
-        "Azure",
-        "DevOps",
-        "Terraform",
-        "CloudFormation",
-        "Python",
-        "Java",
-        "C#",
-        "SQL"
+        "citrix",
+        "windows",
+        "outreach",
+        "presenting",
+        "recruiting"
       ]
     },
     {
@@ -249,15 +260,12 @@
         "Acted as a liaison between the military and civilian contractors for the repair of faulty equipment."
       ],
       "skills": [
-        "AWS",
-        "Azure",
-        "DevOps",
-        "Terraform",
-        "CloudFormation",
-        "Python",
-        "Java",
-        "C#",
-        "SQL"
+        "networking",
+        "military",
+        "radios",
+        "cisco",
+        "support",
+        "routing"
       ]
     }
   ]
