@@ -10,4 +10,4 @@ workers_dev = true
 
 [env.prod]
 workers_dev = false
-route = ["www.liam.network", "liam.network"]
+routes = ["www.liam.network", "liam.network"]
