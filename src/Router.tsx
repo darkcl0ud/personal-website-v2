@@ -5,6 +5,7 @@ import RootPage from "./pages/Root.tsx";
 import ErrorPage from "./pages/Error.tsx";
 import ExperiencePage from "./pages/Experience.tsx";
 import ContactPage from "./pages/Contact.tsx";
+import { contactAction } from "./http/contact.ts";
 
 const router = createBrowserRouter([{
     path: "/", element: <RootPage/>, errorElement: <ErrorPage/>, children: [{
@@ -12,7 +13,7 @@ const router = createBrowserRouter([{
     }, {
         path: "/experience", element: <ExperiencePage/>
     }, {
-        path: "/contact", element: <ContactPage/>
+        path: "/contact", element: <ContactPage/>, action: contactAction
     }]
 }])
 
