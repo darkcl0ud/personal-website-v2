@@ -42,7 +42,7 @@ export default function Nav() {
                 <ul className="gap-6 font-body text-sm justify-center hidden lg:flex">
                     {navItems.map((item) => (
                         <li key={item.href}>
-                            <NavLink end={true} to={item.href} className={({ isActive }) => isActive ? "text-primary-100 underline underline-offset-8" : "text-white/40"}>{item.label}</NavLink>
+                            <NavLink to={item.href} className={({ isActive }) => isActive ? "text-primary-100 underline underline-offset-8" : "text-white/40"}>{item.label}</NavLink>
                         </li>
                     ))}
                 </ul>
