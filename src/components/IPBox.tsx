@@ -17,13 +17,12 @@ export default function IPBox() {
       } catch (err) {
         console.error(err);
         dispatch(locateActions.setLocate({ ip: "ERROR", country: "ERROR" }));
-      } finally {
-        setLoading(false);
       }
     };
     if (!userLocate.ip) {
       fetchIP();
     }
+    setLoading(false);
   }, []);
     return (
         <div className="w-fit h-20 md:absolute md:bottom-0 md:right-0 font-label font-light">
