@@ -13,7 +13,7 @@ export default function TechnicalLog({ article }: { article: ArticleListData }) 
             <img
                 src={`/media/articles/${article.id}/cover.png`}
                 alt="Article cover"
-                className="w-full h-full object-cover"
+                className="w-full md:h-full object-cover"
                 onError={(e) => {
                     e.currentTarget.onerror = null;
                     e.currentTarget.src = defaultCover;
