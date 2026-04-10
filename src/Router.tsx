@@ -1,4 +1,5 @@
 import {createBrowserRouter, RouterProvider} from "react-router";
+import { lazy, Suspense } from "react";
 import HomePage from "./pages/Home.tsx";
 import {type JSX} from "react";
 import RootPage from "./pages/Root.tsx";
@@ -7,7 +8,8 @@ import ExperiencePage from "./pages/Experience.tsx";
 import ContactPage from "./pages/Contact.tsx";
 import { contactAction } from "./http/contact.ts";
 import ArticlesPage from "./pages/Articles.tsx";
-import ArticlePage from "./pages/Article.tsx";
+import { articleLoader } from "./http/articles.ts";
+const ArticlePage = lazy(() => import("./pages/Article.tsx"));
 
 const router = createBrowserRouter([{
     path: "/", element: <RootPage/>, errorElement: <ErrorPage/>, children: [{
@@ -19,7 +21,7 @@ const router = createBrowserRouter([{
     }, {
         path: "/articles", element: <ArticlesPage/>
     }, {
-        path: "/articles/:id", element: <ArticlePage/>
+        path: "/articles/:id", element: <Suspense><ArticlePage/></Suspense>, loader: articleLoader
     }
 ]
 }])

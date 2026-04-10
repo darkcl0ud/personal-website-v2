@@ -1,3 +1,5 @@
+import type { LoaderFunctionArgs } from "react-router";
+
 export type ArticleListData = {
     id: string;
     title: string;
@@ -44,7 +46,9 @@ type GetArticleResponse = {
 
 export async function getArticle(id: string): Promise<GetArticleResponse> {
     const response = await fetch(`/media/articles/${id}`);
-    if (!response.ok) throw new Error('Network response was not ok');
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
     const content: string = await response.text();
     const headers: ArticleHeaders = {
         id: id,
@@ -53,4 +57,17 @@ export async function getArticle(id: string): Promise<GetArticleResponse> {
         tags: (response.headers.get('ldh-article-tags') ?? '').split(','),
     };
     return { content, headers };
-  }
+}
+
+export async function articleLoader({ params }: LoaderFunctionArgs) {
+    const id = params.id;
+    if (!id) {
+        throw new Response("Article not found", { status: 404 });
+    }
+    try {
+        const { content, headers } = await getArticle(id);
+        return { content, headers };
+    } catch (error) {
+        throw new Response("Article not found", { status: 404 });
+    }
+}

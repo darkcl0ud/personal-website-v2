@@ -14,7 +14,7 @@ export default function ErrorPage() {
         return (
             <div className="flex flex-col items-center justify-center min-h-screen gap-8 w-full px-8 md:px-16">
                 <h3 className="text-4xl md:text-6xl font-headline font-bold text-white tracking-wider text-center">4<span className="text-tertiary-100">04</span></h3>
-                <p className="md:text-lg text-white tracking-wider text-center">This is not the page you are looking for</p>
+                <p className="md:text-lg text-white tracking-wider text-center">{error.data as string || "This is not the page you are looking for"}</p>
                 <Button onClick={handleGoHome}><span className="flex items-center gap-2"><HomeIcon className="w-4 h-4" /> Go Home</span></Button>
             </div>
         )

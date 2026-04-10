@@ -1,11 +1,11 @@
 import Markdown, { type Components } from 'react-markdown'
-import { useParams } from 'react-router';
-import { getArticle, type ArticleHeaders } from '../http/articles';
-import { useEffect, useState } from 'react';
+import { useLoaderData, useParams } from 'react-router';
 import Section from '../ui/Section';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import SetMeta from '../components/SetMeta';
+import { lazy, Suspense } from 'react';
+const SyntaxHighlighter = lazy(() => import('react-syntax-highlighter').then(module => ({ default: module.Prism })));
+import { articleLoader } from '../http/articles';
 
 const components: Components = {
   h1: ({ children }) => {
@@ -30,58 +30,42 @@ const components: Components = {
     return <strong className="text-primary-100">{children}</strong>;
   },
   pre: ({ children }) => {
-    return <pre className="grid grid-cols-[1fr]">{children}</pre>;
+    return <pre className="grid grid-cols-[1fr] text-xs md:text-sm">{children}</pre>;
   },
   code: ({ children, className }) => {
     const language = className?.replace('language-', '');
 
     if (!language) {
-      return <code className="bg-neutral-700 px-1 py-0.5 rounded text-white font-mono text-sm">{children}</code>;
+      return <code className="bg-neutral-700 px-1 py-0.5 rounded text-white font-mono">{children}</code>;
     }
 
     return (
-      <SyntaxHighlighter
-        language={language}
-        style={oneDark}
-        wrapLongLines={false}
-        customStyle={{
-          overflowX: 'scroll',
-          whiteSpace: 'pre',
-          borderRadius: '0.5rem',
-          fontSize: '1rem',
-          // maxWidth: '100px',
-        }}
-      >
-        {children as string}
-      </SyntaxHighlighter>
+      <Suspense fallback={<div>Loading...</div>}>
+        <SyntaxHighlighter
+          language={language}
+          style={oneDark}
+          wrapLongLines={false}
+          customStyle={{
+            overflowX: 'scroll',
+            whiteSpace: 'pre',
+            borderRadius: '0.5rem',
+          }}
+        >
+          {children as string}
+        </SyntaxHighlighter>
+      </Suspense>
     );
   },
 }
 
 export default function Article() {
   const { id } = useParams();
-  const [article, setArticle] = useState<string>('');
-  const [headers, setHeaders] = useState<ArticleHeaders>({
-    id: '',
-    title: '',
-    summary: '',
-    tags: [],
-  });
+  const { content, headers } = useLoaderData<typeof articleLoader>();
   const date = new Date(parseInt(headers.id + "000"));
   const formattedDate = date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
 
-  useEffect(() => {
-    const fetchArticle = async () => {
-      const { content, headers } = await getArticle(id as string);
-      setArticle(content);
-      setHeaders(headers);
-      console.log(headers);
-    };
-    fetchArticle();
-  }, [id]);
-
-  return <>
+  return <main>
     <SetMeta title={headers.title} description={headers.summary} keywords={headers.tags.join(',')} image={`/media/articles/${id}/cover.png`} type="article" />
     <Section>
       <div className="flex flex-col justify-center items-center gap-4">
@@ -97,9 +81,9 @@ export default function Article() {
       </div>
     </Section>
     <Section>
-      <div className="max-w-[1200px] mx-auto">
-        <Markdown components={components}>{article}</Markdown>
+      <div className="max-w-[800px] mx-auto">
+        <Markdown components={components}>{content}</Markdown>
       </div>
     </Section>
-  </>;
+  </main>;
 }
