@@ -34,6 +34,9 @@ const components: Components = {
   pre: ({ children }) => {
     return <pre className="grid grid-cols-[1fr] text-xs md:text-sm">{children}</pre>;
   },
+  img: ({ src, alt }) => {
+    return <img src={src} alt={alt} className="w-full h-auto md:my-8 my-4" />;
+  },
   a: ({ children, href }) => {
     return <a href={href} className="text-primary-100 font-bold">{children}</a>;
   },
