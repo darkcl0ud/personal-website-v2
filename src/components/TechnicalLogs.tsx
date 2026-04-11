@@ -8,7 +8,7 @@ export default function TechnicalLogs() {
     const [cursor, setCursor] = useState<string | null>(null);
 
     const fetchArticles = async () => {
-        const response = await listArticles(cursor, 2);
+        const response = await listArticles(cursor, 20);
         setArticles(response.articles);
         setCursor(response.cursor);
     };
