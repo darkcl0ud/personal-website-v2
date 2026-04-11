@@ -27,7 +27,7 @@ const components: Components = {
     return <ol className="list-decimal list-inside text-white font-extralight tracking-widest text-sm my-4">{children}</ol>;
   },
   strong: ({ children }) => {
-    return <strong className="text-primary-100">{children}</strong>;
+    return <strong className="font-extrabold">{children}</strong>;
   },
   pre: ({ children }) => {
     return <pre className="grid grid-cols-[1fr] text-xs md:text-sm">{children}</pre>;
