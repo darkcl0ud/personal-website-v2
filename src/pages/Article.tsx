@@ -9,13 +9,13 @@ import { articleLoader } from '../http/articles';
 
 const components: Components = {
   h1: ({ children }) => {
-    return <h1 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h1>;
+    return <h1 className="text-3xl md:text-4xl xl:text-5xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h1>;
   },
   h2: ({ children }) => {
-    return <h2 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h2>;
+    return <h2 className="text-2xl md:text-3xl xl:text-4xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h2>;
   },
   h3: ({ children }) => {
-    return <h3 className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h3>;
+    return <h3 className="text-xl md:text-2xl xl:text-3xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h3>;
   },
   p: ({ children }) => {
     return <p className="text-white font-extralight tracking-widest text-sm my-4">{children}</p>;
@@ -31,6 +31,9 @@ const components: Components = {
   },
   pre: ({ children }) => {
     return <pre className="grid grid-cols-[1fr] text-xs md:text-sm">{children}</pre>;
+  },
+  a: ({ children, href }) => {
+    return <a href={href} className="text-primary-100 font-bold">{children}</a>;
   },
   code: ({ children, className }) => {
     const language = className?.replace('language-', '');
