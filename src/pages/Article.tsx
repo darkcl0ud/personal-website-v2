@@ -8,6 +8,7 @@ const SyntaxHighlighter = lazy(() => import('react-syntax-highlighter').then(mod
 import { articleLoader } from '../http/articles';
 import getDate from '../data/getDate';
 import { LightBulbIcon } from '@heroicons/react/24/outline';
+import defaultCover from '../assets/defaultCover.jpeg';
 
 const components: Components = {
   h1: ({ children }) => {
@@ -80,10 +81,18 @@ export default function Article() {
 
 
   return <main>
-    <SetMeta title={headers.title} description={headers.summary} keywords={headers.tags.join(',')} image={`/media/articles/${id}/cover.png`} type="article" />
+    <SetMeta title={headers.title} description={headers.summary} keywords={headers.tags.join(',')} image={`/media/articles/${id}/cover.jpeg`} type="article" />
     <Section>
       <div className="flex flex-col justify-center items-center gap-4">
-        <img src={`/media/articles/${id}/cover.png`} alt="Article Cover" className="h-auto max-h-64 2xl:max-h-96 object-cover w-full" />
+        <img 
+          src={`/media/articles/${id}/cover.jpeg`}
+          alt="Article Cover"
+          className="h-auto max-h-64 2xl:max-h-96 object-cover w-full"
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = defaultCover;
+        }}
+        />
         <h1 className="text-white tracking-wider text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-headline font-bold text-center">{headers.title}</h1>
         <p className="text-white font-extralight tracking-widest text-center">{headers.summary}</p>
         <p className="text-tertiary-100 font-extralight tracking-widest text-xs text-center">{formattedDate}</p>

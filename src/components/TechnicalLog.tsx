@@ -1,5 +1,5 @@
 import { type ArticleListData } from "../http/articles";
-import defaultCover from "../assets/defaultCover.png";
+import defaultCover from "../assets/defaultCover.jpeg";
 import { useNavigate } from "react-router";
 import getDate from "../data/getDate";
 
@@ -12,7 +12,7 @@ export default function TechnicalLog({ article }: { article: ArticleListData }) 
     return (
         <li key={article.id} className="grid grid-cols-1 gap-4 bg-neutral-500 min-h-64 md:grid-cols-[16rem_1fr]">
             <img
-                src={`/media/articles/${article.id}/cover.png`}
+                src={`/media/articles/${article.id}/cover.jpeg`}
                 alt="Article cover"
                 className="w-full md:h-full object-cover"
                 onError={(e) => {
