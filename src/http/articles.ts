@@ -66,8 +66,16 @@ export async function articleLoader({ params }: LoaderFunctionArgs) {
     }
     try {
         const { content, headers } = await getArticle(id);
-        return { content, headers };
+        return { content: convertObsidianImages(content, `/media/articles/${id}/`), headers };
     } catch (error) {
         throw new Response("Article not found", { status: 404 });
     }
 }
+
+function convertObsidianImages(markdown: string, basePath: string = 'media/articles/'): string {
+    const obsidianImageRegex = /!\[\[(.+?\.(?:png|jpg|jpeg|gif|svg|webp))\]\]/g;
+    
+    return markdown.replace(obsidianImageRegex, (_, filename) => {
+      return `![${filename}](${basePath}${filename})`;
+    });
+  }
