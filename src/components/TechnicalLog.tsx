@@ -1,11 +1,12 @@
 import { type ArticleListData } from "../http/articles";
 import defaultCover from "../assets/defaultCover.png";
 import { useNavigate } from "react-router";
+import getDate from "../data/getDate";
 
 
 export default function TechnicalLog({ article }: { article: ArticleListData }) {
     const navigate = useNavigate();
-    const date = new Date(parseInt(article.id + "000"));
+    const date = getDate(article.id);
     const formattedDate = date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
     return (
