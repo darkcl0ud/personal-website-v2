@@ -7,6 +7,7 @@ import { lazy, Suspense } from 'react';
 const SyntaxHighlighter = lazy(() => import('react-syntax-highlighter').then(module => ({ default: module.Prism })));
 import { articleLoader } from '../http/articles';
 import getDate from '../data/getDate';
+import { LightBulbIcon } from '@heroicons/react/24/outline';
 
 const components: Components = {
   h1: ({ children }) => {
@@ -35,6 +36,12 @@ const components: Components = {
   },
   a: ({ children, href }) => {
     return <a href={href} className="text-primary-100 font-bold">{children}</a>;
+  },
+  blockquote: ({ children }) => {
+    return <blockquote className="text-white font-extralight text-sm my-4 bg-primary-100/10 p-4 my-8 rounded-md flex flex-col items-start">
+      <span className="flex gap-2 text-primary-100 animate-pulse items-center"><LightBulbIcon className="md:w-6 md:h-6 w-6 h-6" /> <p className="font-extrabold text-base tracking-widest font-label">NOTE</p></span>
+      <span className="md:pl-4 pl-2">{children}</span>
+    </blockquote>;
   },
   code: ({ children, className }) => {
     const language = className?.replace('language-', '');
