@@ -7,7 +7,8 @@
       "experience": [
         "Led the technical architecture design for a global system logging solution. This solution sent data into regional SOCs in AWS for further analysis, using secure private network access between on-premise systems, company managed AWS infrastructure, and third-party vendors.",
         "Designed systems to automate internal onboarding procedures for enterprise clients. Helping to reduce manual interventions, minimizing risk of human error, and increasing onboarding uniformity.",
-        "Identified critical security vulnerabilities, demonstrated how they could be exploited and suggested remediations."
+        "Identified critical security vulnerabilities, demonstrated how they could be exploited and suggested remediations.",
+        "Led the design and developed a POC for a new contextual-based permission engine, providing finer-grained access controls to customer data."
       ],
       "skills": [
         "aws",
