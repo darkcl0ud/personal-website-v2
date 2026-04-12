@@ -9,6 +9,7 @@ import ContactPage from "./pages/Contact.tsx";
 import { contactAction } from "./http/contact.ts";
 import ArticlesPage from "./pages/Articles.tsx";
 import { articleLoader } from "./http/articles.ts";
+import Loading from "./pages/Loading.tsx";
 const ArticlePage = lazy(() => import("./pages/Article.tsx"));
 
 const router = createBrowserRouter([{
@@ -21,7 +22,7 @@ const router = createBrowserRouter([{
     }, {
         path: "/articles", element: <ArticlesPage/>
     }, {
-        path: "/articles/:id", element: <Suspense><ArticlePage/></Suspense>, loader: articleLoader
+        path: "/articles/:id", element: <Suspense fallback={<Loading />}><ArticlePage/></Suspense>, loader: articleLoader
     }
 ]
 }])
