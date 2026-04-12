@@ -15,7 +15,7 @@ export default function Hero() {
     }
     return (
         <section className="flex items-center justify-center bg-cover bg-center relative bg-neutral-900/70 p-8 md:p-24 overflow-hidden">
-            <img src={background} alt="Background" className="absolute inset-0 w-full h-full object-cover -z-10 blur-xs" />
+            <img fetchPriority="high" src={background} alt="Background" className="absolute inset-0 w-full h-full object-cover -z-10 blur-xs" />
             <div className="relative z-10 flex flex-col items-start justify-center w-full h-full gap-6 md:gap-4 max-w-[1440px] mx-auto">
                 <SystemStatus />
                 <h1 className="text-5xl md:text-7xl xl:text-8xl 2xl:text-9xl font-headline font-bold text-white md:w-4/5 leading-none">I build and architect in the cloud<HeroCursor /></h1>

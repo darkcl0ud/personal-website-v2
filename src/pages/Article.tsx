@@ -36,7 +36,7 @@ const components: Components = {
     return <pre className="grid grid-cols-[1fr] text-xs md:text-sm">{children}</pre>;
   },
   img: ({ src, alt }) => {
-    return <img src={src} alt={alt} className="w-full h-auto md:my-8 my-4" />;
+    return <img fetchPriority="low" loading="lazy" src={src} alt={alt} className="w-full h-auto md:my-8 my-4" />;
   },
   a: ({ children, href }) => {
     return <a href={href} className="text-primary-100 font-bold">{children}</a>;
@@ -85,6 +85,7 @@ export default function Article() {
     <Section>
       <div className="flex flex-col justify-center items-center gap-4">
         <img 
+          fetchPriority="high"
           src={`/media/articles/${id}/cover.jpeg`}
           alt="Article Cover"
           className="h-auto max-h-64 2xl:max-h-96 object-cover w-full"

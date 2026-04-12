@@ -12,6 +12,8 @@ export default function TechnicalLog({ article }: { article: ArticleListData }) 
     return (
         <li key={article.id} className="grid grid-cols-1 gap-4 bg-neutral-500 min-h-64 md:grid-cols-[16rem_1fr]">
             <img
+                fetchPriority="low"
+                loading="lazy"
                 src={`/media/articles/${article.id}/cover.jpeg`}
                 alt="Article cover"
                 className="w-full md:h-full object-cover"
