@@ -7,13 +7,14 @@ import Loading from "./Loading";
 
 export default function RootPage() {
     const navigation = useNavigation();
+    let content = <Outlet />;
     if (navigation.state === "loading") {
-        return <Loading />;
+        content = <Loading />;
     }
     return (
         <div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
             <Nav />
-            <Outlet />
+            {content}
             <Footer />
             <ScrollUpOnNewPage />
         </div>
