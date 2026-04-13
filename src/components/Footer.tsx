@@ -5,7 +5,7 @@ export default function Footer() {
                 <p className="text-primary-100 font-light tracking-widest text-center md:text-left">© 2026 Liam Hughes // BUILT_ON_THE_GRID</p>
                 <ul className="flex flex-col sm:flex-row sm:gap-4 gap-6 text-tertiary-100 font-light tracking-widest text-center">
                     <li>
-                        <a href="mailto:liam@nyx.technology" target="_blank" rel="noopener noreferrer">Email</a>
+                        <a href="mailto:hi@liam.network" target="_blank" rel="noopener noreferrer">Email</a>
                     </li>
                     <li>
                         <a href="https://www.github.com/darkcl0ud" target="_blank" rel="noopener noreferrer">GitHub</a>
