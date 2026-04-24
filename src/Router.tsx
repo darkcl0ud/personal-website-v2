@@ -13,17 +13,28 @@ import Loading from "./pages/Loading.tsx";
 const ArticlePage = lazy(() => import("./pages/Article.tsx"));
 
 const router = createBrowserRouter([{
-    path: "/", element: <RootPage/>, errorElement: <ErrorPage/>, children: [{
-        path: "/", element: <HomePage/>
-    }, {
-        path: "/experience", element: <ExperiencePage/>
-    }, {
-        path: "/contact", element: <ContactPage/>, action: contactAction
-    }, {
-        path: "/articles", element: <ArticlesPage/>
-    }, {
-        path: "/articles/:id", element: <Suspense fallback={<Loading />}><ArticlePage/></Suspense>, loader: articleLoader
-    }
+    path: "/", 
+    element: <RootPage/>, 
+    errorElement: <ErrorPage/>,
+    hydrateFallbackElement: <Loading/>,
+    children: [{
+            path: "/",
+            element: <HomePage/>
+        }, {
+            path: "/experience",
+            element: <ExperiencePage/>
+        }, {
+            path: "/contact",
+            element: <ContactPage/>,
+            action: contactAction
+        }, {
+            path: "/articles",
+            element: <ArticlesPage/>
+        }, {
+            path: "/articles/:id",
+            element: <Suspense fallback={<Loading />}><ArticlePage/></Suspense>,
+            loader: articleLoader
+        }
 ]
 }])
 
