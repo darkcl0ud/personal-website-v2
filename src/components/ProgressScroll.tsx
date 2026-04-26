@@ -9,8 +9,8 @@ export default function ProgressScroll() {
       const docHeight = document.documentElement.scrollHeight;
       const winHeight = window.innerHeight;
       const totalScrollable = docHeight - winHeight;
-      const pct = totalScrollable > 0 ? (scrollTop / totalScrollable) * 100 : 0;
-      setProgress(pct/100);
+      const pct = totalScrollable > 0 ? (scrollTop / totalScrollable) : 0;
+      setProgress(pct);
     };
 
     window.addEventListener('scroll', updateProgress, { passive: true });
