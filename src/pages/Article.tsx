@@ -9,6 +9,7 @@ import { articleLoader } from '../http/articles';
 import getDate from '../data/getDate';
 import { LightBulbIcon } from '@heroicons/react/24/outline';
 import defaultCover from '../assets/defaultCover.jpeg';
+import ProgressScroll from '../components/ProgressScroll';
 
 const components: Components = {
   h1: ({ children }) => {
@@ -87,6 +88,7 @@ export default function Article() {
 
 
   return <main>
+    <ProgressScroll />
     <SetMeta title={headers.title} description={headers.summary} keywords={headers.tags.join(',')} image={`/media/articles/${id}/cover.jpeg`} type="article" />
     <Section>
       <div className="flex flex-col justify-center items-center gap-4">
