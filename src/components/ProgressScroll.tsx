@@ -10,7 +10,7 @@ export default function ProgressScroll() {
       const winHeight = window.innerHeight;
       const totalScrollable = docHeight - winHeight;
       const pct = totalScrollable > 0 ? (scrollTop / totalScrollable) * 100 : 0;
-      setProgress(Math.min(100, Math.max(0, pct)));
+      setProgress(pct/100);
     };
 
     window.addEventListener('scroll', updateProgress, { passive: true });
@@ -23,9 +23,10 @@ export default function ProgressScroll() {
         <div 
             style={{ 
                 height: '4px',
-                width: `${progress}%`,
                 background: 'var(--color-primary-100)',
-                transition: 'width 0.01s linear',
+                transform: `scaleX(${progress})`,
+                transformOrigin: 'left',
+                willChange: 'transform'
             }} 
         />
         </div>
