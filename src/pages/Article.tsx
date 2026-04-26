@@ -20,8 +20,11 @@ const components: Components = {
   h3: ({ children }) => {
     return <h3 className="text-xl md:text-2xl xl:text-3xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h3>;
   },
+  h4: ({ children }) => {
+    return <h4 className="text-lg md:text-xl xl:text-2xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h4>;
+  },
   p: ({ children }) => {
-    return <p className="text-white font-extralight tracking-widest text-sm my-4">{children}</p>;
+    return <p className="text-white font-extralight tracking-widest leading-7 my-4">{children}</p>;
   },
   ul: ({ children }) => {
     return <ul className="list-disc list-inside text-white font-extralight tracking-widest text-sm my-4">{children}</ul>;
@@ -95,8 +98,8 @@ export default function Article() {
         }}
         />
         <h1 className="text-white tracking-wider text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-headline font-bold text-center">{headers.title}</h1>
-        <p className="text-white font-extralight tracking-widest text-center">{headers.summary}</p>
-        <p className="text-tertiary-100 font-extralight tracking-widest text-xs text-center">{formattedDate}</p>
+        <p className="text-white font-extralight tracking-widest text-center text-sm">{headers.summary}</p>
+        <p className="text-tertiary-100 font-extralight tracking-widest text-sm text-center">{formattedDate}</p>
         <ul className="flex flex-row flex-wrap gap-2 items-center justify-center">
           {headers.tags.map((tag) => (
             <li key={tag} className="text-tertiary-100 font-extralight tracking-widest text-xs">/ {tag.toUpperCase()}</li>
@@ -105,9 +108,9 @@ export default function Article() {
       </div>
     </Section>
     <Section>
-      <div className="max-w-[800px] mx-auto">
+      <article className="max-w-[680px] mx-auto">
         <Markdown components={components}>{content}</Markdown>
-      </div>
+      </article>
     </Section>
   </main>;
 }
