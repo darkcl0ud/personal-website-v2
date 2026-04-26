@@ -27,10 +27,13 @@ const components: Components = {
     return <p className="text-white font-extralight tracking-widest leading-7 my-4">{children}</p>;
   },
   ul: ({ children }) => {
-    return <ul className="list-disc list-inside text-white font-extralight tracking-widest text-sm my-4">{children}</ul>;
+    return <ul className="list-disc list-inside text-white font-extralight tracking-widest leading-7 my-4">{children}</ul>;
   },
   ol: ({ children }) => {
-    return <ol className="list-decimal list-inside text-white font-extralight tracking-widest text-sm my-4">{children}</ol>;
+    return <ol className="list-decimal list-inside text-white font-extralight tracking-widest leading-7 my-4">{children}</ol>;
+  },
+  li: ({ children }) => {
+    return <li className="my-1">{children}</li>;
   },
   strong: ({ children }) => {
     return <strong className="font-extrabold">{children}</strong>;
