@@ -108,7 +108,7 @@ export default function Article() {
       </div>
     </Section>
     <Section>
-      <article className="max-w-[680px] mx-auto">
+      <article className="max-w-[680px] mx-auto border-t-[0.35px] border-tertiary-100/35 md:pt-8 pt-4">
         <Markdown components={components}>{content}</Markdown>
       </article>
     </Section>
