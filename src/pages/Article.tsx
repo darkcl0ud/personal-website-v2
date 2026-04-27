@@ -13,16 +13,16 @@ import ProgressScroll from '../components/ProgressScroll';
 
 const components: Components = {
   h1: ({ children }) => {
-    return <h1 className="text-3xl md:text-4xl xl:text-5xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h1>;
+    return <h2 className="text-3xl md:text-4xl xl:text-5xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h2>;
   },
   h2: ({ children }) => {
-    return <h2 className="text-2xl md:text-3xl xl:text-4xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h2>;
+    return <h3 className="text-2xl md:text-3xl xl:text-4xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h3>;
   },
   h3: ({ children }) => {
-    return <h3 className="text-xl md:text-2xl xl:text-3xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h3>;
+    return <h4 className="text-xl md:text-2xl xl:text-3xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h4>;
   },
   h4: ({ children }) => {
-    return <h4 className="text-lg md:text-xl xl:text-2xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h4>;
+    return <h5 className="text-lg md:text-xl xl:text-2xl font-headline text-white tracking-wider leading-none md:my-8 my-4">{children}</h5>;
   },
   p: ({ children }) => {
     return <p className="text-white font-extralight tracking-widest leading-7 my-4">{children}</p>;
