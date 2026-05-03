@@ -19,7 +19,7 @@ export default function TechnicalLogs() {
 
     return (
         <Section>
-            <ul className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,32rem),1fr))] justify-center gap-4">
+            <ul className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,38rem),1fr))] justify-center gap-4">
                 {articles.map((article) => (
                     <TechnicalLog key={article.id} article={article} />
                 ))}

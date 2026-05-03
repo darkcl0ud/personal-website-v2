@@ -40,7 +40,7 @@ export default function CoreSkills() {
         <Header number="01" title="Core Skills" />
         <div className="mx-auto grid w-full grid-cols-[repeat(auto-fit,minmax(min(100%,24rem),1fr))] justify-center">
             {coreSkills.map((skill) => (
-                <div key={skill.title} className="bg-neutral-500 p-8 outline outline-white/5 min-h-80 flex flex-col gap-8">
+                <div key={skill.title} className="bg-neutral-500 px-8 py-12 outline outline-white/5 flex flex-col gap-8">
                     {skill.icon}
                     <h2 className="text-2xl font-headline text-white tracking-wide">{skill.title}</h2>
                     <p className="text-tertiary-100 font-extralight">{skill.description}</p>
