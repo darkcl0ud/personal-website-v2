@@ -1,4 +1,3 @@
-import background from "../assets/map.png";
 import Button from "../ui/Button";
 import HeroCursor from "../ui/HeroCursor";
 import { useNavigate } from "react-router";
