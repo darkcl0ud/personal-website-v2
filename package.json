@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "sync-json": "mkdir -p public/data && cp src/data/*.json public/data",
+    "dev": "npm run sync-json && vite",
+    "build": "npm run sync-json && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
